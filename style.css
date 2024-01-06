@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #404040;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  border-radius: 8px;
+  background-color: #fffbfb;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  line-height: 1.2;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 20px;
+}
+.about {
+  color: rgb(0, 0, 117);
+  user-select: none;
+}
+.above {
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: inherit;
+  font-size: 18px;
+  background-color: #74ff33;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+.above:hover {
+  filter: brightness(90%);
+}
+.above:active {
+  scale: 0.95;
+}
+
+.abortion {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.main {
+  padding: 20px 0;
+  text-align: center;
+}
+.above_add {
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #ff0000;
+}
+.header {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.above-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.above_red {
+  background-color: #ff0000;
+  color: rgb(0, 0, 117);
+}
+.above_green {
+  background-color: #74ff33;
+  color: rgb(0, 0, 117);
+}
+.able {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 95%;
+}
+.checkbox {
+  width: 30px;
+  accent-color: green;
+}
+.ekran {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f0eef1;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s ease-in-out;
+}
+.ekran.open {
+  transform: translate(-50%, -50%) scale(1);
+}
+.absolute {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.form-title {
+  font-size: 24px;
+  color: rgb(0, 0, 117);
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+.absorb {
+  display: flex;
+  gap: 20px;
+  color: rgb(0, 0, 117);
+}
+.absorb > label {
+  user-select: none;
+  cursor: pointer;
+}
+.absorb > label:hover {
+  text-decoration: underline;
+}
+
+.accept {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.3);
+  transform: scale(0);
+}
+.accept.open {
+  transform: scale(1);
+}
+.book_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.book_form > button {
+  width: 100%;
+}
